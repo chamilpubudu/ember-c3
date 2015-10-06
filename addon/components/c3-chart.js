@@ -176,7 +176,7 @@ export default Ember.Component.extend({
   /**
     Data Observer
   */
-  dataDidChange: Ember.observer('data', function() {
+  dataDidChange: Ember.observer('data','axis', function() {
     // console.log('data');
     var self = this;
     var chart = self.get('chart');
